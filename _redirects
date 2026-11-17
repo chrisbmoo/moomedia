@@ -1,0 +1,19 @@
+# Old WordPress URLs -> new pages (301 = permanent, keeps Google rankings)
+/project/*                          /all-projects/                         301
+/portfolio/*                        /all-projects/                         301
+/my-tickets/                        /contact/                              301
+/submit-ticket/                     /contact/                              301
+/web/                               /web-design-geelong/                   301
+/e-commerce/                        /web-design-geelong/                   301
+/content/                           /marketing/                            301
+/events-2/                          /marketing/                            301
+/moomedia-geelong-digital-signage/  /signage/                              301
+/telephone-messages-on-hold-enquiry/ /telephone-messages-on-hold/          301
+/marketing-video-web/               /                                      301
+/moovids/                           /video-production/                     301
+/payments/                          /contact/                              301
+/wp-admin/*                         /                                      301
+/wp-login.php                       /                                      301
+/feed/*                             /                                      301
+/category/*                         /                                      301
+/tag/*                              /                                      301
