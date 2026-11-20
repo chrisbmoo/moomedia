@@ -69,4 +69,24 @@
       setTimeout(function () { i = (i + 1) % words.length; rot.textContent = words[i]; rot.classList.remove('fade'); }, 350);
     }, 3200);
   }
+  // Contact form: send via Web3Forms, then go to the thank-you page
+  var form = document.querySelector('.contact-form');
+  if (form && window.fetch) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var status = form.querySelector('.form-status');
+      btn.disabled = true; btn.textContent = 'Sending…'; if (status) status.textContent = '';
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && data.success) { window.location.href = '/thank-you/'; return; }
+          throw new Error((data && data.message) || 'Send failed');
+        })
+        .catch(function () {
+          btn.disabled = false; btn.textContent = 'Send message';
+          if (status) status.innerHTML = 'Sorry, your message didn\u2019t send. Please try again, or call us on <a href="tel:+61352298647">(03) 5229 8647</a>.';
+        });
+    });
+  }
 })();

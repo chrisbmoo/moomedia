@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=202611211040">
+<link rel="stylesheet" href="/assets/css/style.css?v=202611211048">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "moomedia Australia", "url": "https://www.moomedia.com.au/", "telephone": "+61 3 5229 8647", "email": "admin@moomedia.com.au", "image": "https://www.moomedia.com.au/images/moologo.png", "address": {"@type": "PostalAddress", "streetAddress": "Studio 10, 28-31 Industrial Place", "addressLocality": "Breakwater", "addressRegion": "VIC", "postalCode": "3219", "addressCountry": "AU"}, "openingHours": "Mo-Fr 09:00-17:00", "sameAs": ["https://www.facebook.com/MoomediaAustralia"]}</script>
 </head>
 <body>
@@ -43,12 +43,13 @@
     <h3>Email us</h3><p><a class="big" href="mailto:admin@moomedia.com.au">admin@moomedia.com.au</a></p>
     <div class="map"><iframe title="Map to moomedia, Breakwater" loading="lazy" src="https://maps.google.com/maps?q=28-31+Industrial+Place,+Breakwater+VIC+3219&z=15&output=embed"></iframe></div>
   </div>
-  <form class="contact-form" action="https://formsubmit.co/chris@moomedia.com.au" method="POST">
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
     <h2>Leave us a message</h2>
-    <input type="hidden" name="_subject" value="New enquiry from moomedia.com.au">
-    <input type="hidden" name="_next" value="https://www.moomedia.com.au/thank-you/">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="access_key" value="5ec2d71d-c56b-4415-bbf5-d79789c3142e">
+    <input type="hidden" name="subject" value="New enquiry from moomedia.com.au">
+    <input type="hidden" name="from_name" value="moomedia website">
+    <input type="hidden" name="redirect" value="https://www.moomedia.com.au/thank-you/">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Name<input name="name" required autocomplete="name"></label>
     <label>Email<input type="email" name="email" required autocomplete="email"></label>
     <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
@@ -56,6 +57,7 @@
       <select name="service"><option>General enquiry</option><option>Video / audio</option><option>Messages on hold</option><option>Graphic design</option><option>Marketing / PR</option></select></label>
     <label>Message<textarea name="message" rows="6" required></textarea></label>
     <button class="btn" type="submit">Send message</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
   </form>
 </div></section>
 </main>
@@ -77,6 +79,6 @@
 <span><a href="/privacy-policy/">Privacy Policy</a> · <a href="https://www.facebook.com/MoomediaAustralia" target="_blank" rel="noopener">Facebook</a></span></div>
 </footer>
 <div class="lightbox" hidden><button class="lb-close" aria-label="Close">&times;</button><div class="lb-inner"></div><p class="lb-caption"></p></div>
-<script src="/assets/js/main.js?v=202611211040" defer></script>
+<script src="/assets/js/main.js?v=202611211048" defer></script>
 </body>
 </html>

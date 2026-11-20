@@ -32,10 +32,10 @@ find-and-replace it across all `index.html` files.
 
 ## Contact form
 
-The form posts to [FormSubmit](https://formsubmit.co) and is emailed to chris@moomedia.com.au.
-The **first** submission sends an activation email to that address – click the link in it once
-and every message after that comes straight through. To send to a different address, change the
-`action="https://formsubmit.co/..."` line in `contact/index.html`.
+The form sends through [Web3Forms](https://web3forms.com) (free, up to 250 messages/month).
+Messages go to the email address the access key was created with. To change the
+recipient, create a new access key at web3forms.com and replace the `access_key`
+value in `contact/index.html`. After sending, visitors land on `/thank-you/`.
 
 ## Before switching the domain
 
