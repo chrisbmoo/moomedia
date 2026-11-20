@@ -42,3 +42,9 @@ and every message after that comes straight through. To send to a different addr
 - Check email: if moomedia.com.au email is hosted at SiteGround, set up email elsewhere
   (Google Workspace, Microsoft 365, Zoho, etc.) **before** moving DNS, and make sure the MX
   records are in Cloudflare DNS.
+
+## Updating styles or scripts
+
+The CSS and JS links in every page end with `?v=<number>`. When you change
+`assets/css/style.css` or `assets/js/main.js`, bump that number in all pages
+(find-and-replace) so visitors' browsers load the new file instead of a saved copy.
