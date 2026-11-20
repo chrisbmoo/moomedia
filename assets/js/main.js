@@ -66,20 +66,7 @@
     var words = rot.dataset.words.split('|'), i = 0;
     setInterval(function () {
       rot.classList.add('fade');
-      setTimeout(function () {
-        i = (i + 1) % words.length;
-        var parts = words[i].split('/');
-        if (parts.length > 1) {
-          rot.innerHTML = '';
-          var a = document.createElement('strong'); a.textContent = parts[0];
-          var b = document.createElement('em'); b.textContent = parts[1];
-          rot.appendChild(a); rot.appendChild(b);
-        } else { rot.textContent = words[i]; }
-        rot.classList.remove('fade');
-      }, 350);
+      setTimeout(function () { i = (i + 1) % words.length; rot.textContent = words[i]; rot.classList.remove('fade'); }, 350);
     }, 3200);
   }
-
-  // Keep the footer copyright year current
-  document.querySelectorAll('.yr').forEach(function (y) { y.textContent = new Date().getFullYear(); });
 })();
