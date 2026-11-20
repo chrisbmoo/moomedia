@@ -149,10 +149,10 @@ p{margin:0 0 1em}
 
 /* brands */
 .brand-marquee{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.brand-track{list-style:none;margin:0;padding:10px 0;display:flex;align-items:center;--gap:90px;gap:var(--gap);width:max-content;animation:brand-scroll 40s linear infinite}
+.brand-track{list-style:none;margin:0;padding:10px 0;display:flex;align-items:center;--gap:70px;gap:var(--gap);width:max-content;animation:brand-scroll 40s linear infinite}
 .brand-marquee:hover .brand-track,.brand-marquee:focus-within .brand-track{animation-play-state:paused}
-.brand-track a{display:flex;align-items:center;justify-content:center;height:110px}
-.brand-track img{height:auto;max-height:100px;width:auto;max-width:240px;filter:brightness(0);opacity:.55;transition:opacity .2s}
+.brand-track a{display:flex;align-items:center;justify-content:center;height:80px}
+.brand-track img{height:auto;max-height:56px;width:auto;max-width:160px;filter:brightness(0);opacity:.55;transition:opacity .2s}
 .brand-track a:hover img,.brand-track a:focus-visible img{opacity:1}
 @keyframes brand-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - var(--gap) / 2))}}
 
@@ -241,9 +241,9 @@ p{margin:0 0 1em}
   .topbar a:nth-child(2){display:none}
   .grid-services,.grid-skills,.grid-team,.grid-projects.four,.ticks{grid-template-columns:1fr}
   .grid-projects{grid-template-columns:1fr}
-  .brand-track{--gap:56px;animation-duration:30s}
-  .brand-track a{height:80px}
-  .brand-track img{max-height:70px;max-width:170px}
+  .brand-track{--gap:44px;animation-duration:30s}
+  .brand-track a{height:60px}
+  .brand-track img{max-height:42px;max-width:120px}
   .footer-grid{grid-template-columns:1fr}
   .quote{padding:36px 28px}
   .contact-form{padding:26px}
