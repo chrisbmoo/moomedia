@@ -48,3 +48,9 @@ value in `contact/index.html`. After sending, visitors land on `/thank-you/`.
 The CSS and JS links in every page end with `?v=<number>`. When you change
 `assets/css/style.css` or `assets/js/main.js`, bump that number in all pages
 (find-and-replace) so visitors' browsers load the new file instead of a saved copy.
+
+## security.txt
+
+`/.well-known/security.txt` lists the security contact (admin@moomedia.com.au).
+It has an `Expires` date of 22 Nov 2027 — update that date (and keep it less
+than a year ahead) before it passes.
