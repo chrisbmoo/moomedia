@@ -154,6 +154,7 @@ p{margin:0 0 1em}
 .brand-track a{display:flex;align-items:center;justify-content:center;height:80px}
 .brand-track img{height:auto;max-height:56px;width:auto;max-width:160px;filter:brightness(0);opacity:.55;transition:opacity .2s}
 .brand-track a:hover img,.brand-track a:focus-visible img{opacity:1}
+.brand-track img.logo-lg{max-height:64px}
 @keyframes brand-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - var(--gap) / 2))}}
 
 /* contact */
@@ -244,6 +245,7 @@ p{margin:0 0 1em}
   .brand-track{--gap:44px;animation-duration:30s}
   .brand-track a{height:60px}
   .brand-track img{max-height:42px;max-width:120px}
+  .brand-track img.logo-lg{max-height:48px}
   .footer-grid{grid-template-columns:1fr}
   .quote{padding:36px 28px}
   .contact-form{padding:26px}
