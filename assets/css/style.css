@@ -238,7 +238,7 @@ p{margin:0 0 1em}
   .hero-home{padding:110px 0 100px}
 }
 @media (max-width:600px){
-  .topbar a[href^="mailto:"]{display:none}
+  .topbar a:nth-child(2){display:none}
   .grid-services,.grid-skills,.grid-team,.grid-projects.four,.ticks{grid-template-columns:1fr}
   .grid-projects{grid-template-columns:1fr}
   .brand-track{--gap:44px;animation-duration:30s}
