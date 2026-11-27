@@ -26,6 +26,8 @@ p{margin:0 0 1em}
 .topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px}
 .topbar a{color:#fff;text-decoration:none;margin-left:18px}
 .topbar a:hover{color:var(--green)}
+.topbar a.social{display:inline-flex;align-items:center;vertical-align:middle;margin-left:14px}
+.topbar a.social svg{display:block}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:78px}
 .logo img{width:170px;height:auto}
