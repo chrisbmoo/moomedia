@@ -249,7 +249,7 @@ p{margin:0 0 1em}
   .contact-form{padding:26px}
   .hero{padding:70px 0 60px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}.brand-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}.brand-track li:nth-child(n+9){display:none}.brand-marquee{-webkit-mask-image:none;mask-image:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}.brand-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}.brand-track li:nth-child(n+10){display:none}.brand-marquee{-webkit-mask-image:none;mask-image:none}}
 
 /* services: centre an incomplete last row */
 .grid.grid-services{display:flex;flex-wrap:wrap;justify-content:center}
